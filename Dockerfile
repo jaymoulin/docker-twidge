@@ -1,0 +1,11 @@
+FROM debian:jessie-slim as builder
+
+COPY qemu-*-static /usr/bin/
+
+FROM builder
+
+LABEL maintainer="Jay MOULIN <jaymoulin@gmail.com> <https://twitter.com/MoulinJay>"
+
+RUN apt-get update && apt-get install -y twidge && rm -Rf /etc/apt/*
+
+ENTRYPOINT ["twidge"]

@@ -1,0 +1,40 @@
+image: jaymoulin/twidge:$FULLVERSION
+manifests:
+  -
+    image: jaymoulin/twidge:$VERSION-arm32v5
+    platform:
+      architecture: arm
+      variant: v5
+      os: linux
+  -
+    image: jaymoulin/twidge:$VERSION-arm32v7
+    platform:
+      architecture: arm
+      variant: v7
+      os: linux
+  -
+    image: jaymoulin/twidge:$VERSION-arm64v8
+    platform:
+      architecture: arm
+      variant: v8
+      os: linux
+  -
+    image: jaymoulin/twidge:$VERSION-amd64
+    platform:
+      architecture: amd64
+      os: linux
+  -
+    image: jaymoulin/twidge:$VERSION-i386
+    platform:
+      architecture: 386
+      os: linux
+  -
+      image: jaymoulin/twidge:$VERSION-ppc64le
+      platform:
+        architecture: ppc64le
+        os: linux
+  -
+    image: jaymoulin/twidge:$VERSION-s390x
+    platform:
+      architecture: s390x
+      os: linux
