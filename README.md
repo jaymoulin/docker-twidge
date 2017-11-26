@@ -14,7 +14,7 @@ Installation
 ------------
 
 ```
-docker run --rm -ti -v /path/to/your/twidge/folder:/root jaymoulin/twidge setup
+docker run --rm -ti -v /path/to/your/.twidgerc:/root/.twidgerc jaymoulin/twidge setup
 ```
 
 Then follow the instructions. This will create a key to identify your user
@@ -25,12 +25,12 @@ Usage
 
 ## Help
 ```
-docker run --rm -ti -v /path/to/your/twidge/folder:/root jaymoulin/twidge --help
+docker run --rm -ti -v /path/to/your/.twidgerc:/root/.twidgerc jaymoulin/twidge --help
 ```
 
 ## Commands available
 ```
-docker run --rm -ti -v /path/to/your/twidge/folder:/root jaymoulin/twidge lscommands
+docker run --rm -ti -v /path/to/your/.twidgerc:/root/.twidgerc jaymoulin/twidge lscommands
 ```
 
 Learn more on [Twidge documentation](https://github.com/jgoerzen/twidge/wiki)
