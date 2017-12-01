@@ -1,4 +1,5 @@
 VERSION ?= 0.1.0
+CACHE ?= --no-cache=1
 FULLVERSION ?= ${VERSION}
 archs = amd64 arm32v5 arm32v7 arm64v8 i386 ppc64le s390x
 
@@ -8,7 +9,7 @@ build:
 	cp /usr/bin/qemu-*-static .
 	$(foreach arch,$(archs), \
 		cat Dockerfile | sed "s/FROM debian:jessie-slim/FROM ${arch}\/debian:jessie-slim/g" > .Dockerfile; \
-		docker build -t jaymoulin/twidge:${VERSION}-$(arch) -f .Dockerfile .;\
+		docker build -t jaymoulin/twidge:${VERSION}-$(arch) -f .Dockerfile ${CACHE} .;\
 	)
 publish:
 	docker push jaymoulin/twidge
