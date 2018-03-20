@@ -15,6 +15,11 @@ manifests:
   -
     image: jaymoulin/twidge:$VERSION-arm64v8
     platform:
+      architecture: arm64
+      os: linux
+  -
+    image: jaymoulin/twidge:$VERSION-arm64v8
+    platform:
       architecture: arm
       variant: v8
       os: linux
