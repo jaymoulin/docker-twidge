@@ -34,11 +34,6 @@ manifests:
       architecture: 386
       os: linux
   -
-      image: jaymoulin/twidge:$VERSION-ppc64le
-      platform:
-        architecture: ppc64le
-        os: linux
-  -
     image: jaymoulin/twidge:$VERSION-s390x
     platform:
       architecture: s390x
