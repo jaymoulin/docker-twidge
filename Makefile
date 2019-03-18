@@ -1,6 +1,6 @@
-VERSION ?= 0.1.0
+VERSION ?= twidge/1.1.0
 CACHE ?= --no-cache=1
-FULLVERSION ?= ${VERSION}
+FULLVERSION ?= twidge/1.1.0
 archs ?= amd64 arm32v5 arm32v7 arm64v8 i386
 
 .PHONY: all build publish latest
