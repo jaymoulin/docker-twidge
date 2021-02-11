@@ -15,7 +15,7 @@ build: qemu-aarch64-static qemu-arm-static
 		docker build -t jaymoulin/twidge:${VERSION}-$(arch) -f .Dockerfile ${CACHE} .;\
 	)
 publish:
-	docker push jaymoulin/twidge
+	docker push jaymoulin/twidge -a
 	cat manifest.yml | sed "s/\$$VERSION/${VERSION}/g" > manifest.yaml
 	cat manifest.yaml | sed "s/\$$FULLVERSION/${FULLVERSION}/g" > manifest2.yaml
 	mv manifest2.yaml manifest.yaml
