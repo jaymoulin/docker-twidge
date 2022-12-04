@@ -7,6 +7,6 @@ FROM builder
 
 LABEL maintainer="Jay MOULIN <jaymoulin@gmail.com> <https://twitter.com/MoulinJay>"
 
-RUN apt-get update && apt-get install -y twidge && apt-get clean
+RUN apt-get update && apt-get install --force-yes -y twidge && apt-get clean
 
 ENTRYPOINT ["twidge"]
