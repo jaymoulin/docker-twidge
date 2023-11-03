@@ -1,6 +1,6 @@
-VERSION ?= 1.1.1
+VERSION ?= debian/1.1.1
 CACHE ?= --no-cache=1
-FULLVERSION ?= 1.1.1
+FULLVERSION ?= debian/1.1.1
 archs ?= amd64 arm32v5 arm32v7 arm64v8 i386
 
 .PHONY: all build publish latest
