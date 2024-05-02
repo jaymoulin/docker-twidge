@@ -1,3 +1,12 @@
+> [!CAUTION]
+> As-of 2021, this product does not have a free support team anymore. If you want this product to be maintained, please support my work.
+ 
+> [!NOTE]
+> (This product is available under a free and permissive license, but needs financial support to sustain its continued improvements. In addition to maintenance and stability there are many  desirable features yet to be added.)
+ 
+> [!TIP]
+> THIS REPOSITORY IS AUTO-UPDATED BY [GITHUB-RELEASE-NOTIFIER](https://github.com/femtopixel/github-release-notifier) (https://github.com/femtopixel/github-release-notifier)
+
 ![logo](logo.png)
 
 Twidge (Twitter CLI) - Docker Image (Multiarch)
@@ -10,16 +19,8 @@ Twidge (Twitter CLI) - Docker Image (Multiarch)
 [![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png "Buy me a coffee")](https://www.buymeacoffee.com/jaymoulin)
 [![Buy me a coffee](https://ko-fi.com/img/githubbutton_sm.svg "Buy me a coffee")](https://www.ko-fi.com/jaymoulin)
 
-DISCLAIMER: As-of 2021, this product does not have a free support team anymore. If you want this product to be maintained, please support on Patreon.
-
-(This product is available under a free and permissive license, but needs financial support to sustain its continued improvements. In addition to maintenance and stability there are many desirable features yet to be added.)
-
-THIS REPOSITORY IS AUTO-UPDATED BY [GITHUB-RELEASE-NOTIFIER](https://github.com/femtopixel/github-release-notifier) (https://github.com/femtopixel/github-release-notifier)
-
 Installation
 ------------
-
-Please note that this package is also hosted on Github Container Registry, just add `ghcr.io/` before the image name (`docker pull ghcr.io/jaymoulin/twidge` instead of `jaymoulin/twidge`)
 
 ```
 docker run --rm -ti -v /path/to/your/.twidgerc:/root/.twidgerc jaymoulin/twidge setup
@@ -43,13 +44,3 @@ docker run --rm -ti -v /path/to/your/.twidgerc:/root/.twidgerc jaymoulin/twidge 
 
 Learn more on [Twidge documentation](https://github.com/jgoerzen/twidge/wiki)
 
-Appendixes
----
-
-### Install Docker
-
-If you don't have Docker installed yet, you can do it easily in one line using this command
- 
-```
-curl -sSL "https://gist.githubusercontent.com/jaymoulin/e749a189511cd965f45919f2f99e45f3/raw/0e650b38fde684c4ac534b254099d6d5543375f1/ARM%2520(Raspberry%2520PI)%2520Docker%2520Install" | sudo sh && sudo usermod -aG docker $USER
-```

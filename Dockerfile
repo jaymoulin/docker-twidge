@@ -1,11 +1,9 @@
-FROM debian:stable-slim as builder
+FROM debian:stable-slim
 
-COPY qemu-arm-static /usr/bin/
-COPY qemu-aarch64-static /usr/bin/
-
-FROM builder
-
-LABEL maintainer="Jay MOULIN <jaymoulin@gmail.com> <https://twitter.com/MoulinJay>"
+ARG VERSION
+ARG TARGETPLATFORM
+LABEL maintainer="Jay MOULIN <https://jaymoulin.me>"
+LABEL version="${VERSION}-${TARGETPLATFORM}"
 
 RUN apt-get update && apt-get install --force-yes -y twidge && apt-get clean
 
